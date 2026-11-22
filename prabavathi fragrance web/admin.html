@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Owner Dashboard | Prabavathi Fragrance</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--m9:#4A0E12;--m8:#6B141A;--m95:#2E070A;--sf:#F97316;--g4:#FACC15;--g5:#D4AF37;--c50:#FDFBF7;--c100:#F7F1E5;--c200:#EFE3CE;--mu:#78716c}
+*{box-sizing:border-box;margin:0}body{font:15px/1.5 Inter,system-ui,sans-serif;background:var(--c50);color:#292524}[hidden]{display:none!important}button{font:inherit;cursor:pointer;border:0}
+input,select,textarea{font:inherit;width:100%;padding:10px 12px;border:1px solid #d6d3d1;border-radius:10px;background:#fff}input:focus,select:focus,textarea:focus{outline:0;border-color:var(--m8);box-shadow:0 0 0 3px #6b141a22}
+.login{min-height:100vh;display:grid;place-items:center;background:linear-gradient(135deg,var(--m95),var(--m8));padding:20px}.lc{background:#fff;border-radius:22px;padding:32px;width:min(400px,100%);display:grid;gap:14px;box-shadow:0 30px 70px #0007}.lc h1{font:700 1.4rem Cinzel,serif;color:var(--m9);text-align:center}.lc p{text-align:center;color:var(--mu);font-size:.85rem}
+.btn{background:linear-gradient(90deg,var(--g5),var(--sf));color:var(--m95);font-weight:700;padding:11px 20px;border-radius:12px}.btn:hover{filter:brightness(1.08)}.btn:disabled{opacity:.6}.b2{background:#fff;border:1px solid #d6d3d1;color:var(--m9);font-weight:600;padding:8px 14px;border-radius:10px}.b2:hover{background:var(--c100)}.dg{background:#fee2e2;color:#b91c1c;border-color:#fecaca}
+.err{color:#b91c1c;font-size:.85rem;min-height:1.2em}
+.shell{display:grid;grid-template-columns:230px 1fr;min-height:100vh}aside{background:var(--m95);color:#efe3ce;padding:18px 12px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:4px}aside h2{font:700 1rem Cinzel,serif;color:var(--g4);padding:6px 10px 14px}aside nav{display:grid;gap:4px}aside nav button{background:none;color:inherit;text-align:left;padding:10px 12px;border-radius:10px;font-weight:500}aside nav button:hover{background:var(--m9)}aside nav button.on{background:var(--m8);color:var(--g4)}
+.top{position:sticky;top:0;z-index:5;background:#fdfbf7ee;backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 24px;border-bottom:1px solid var(--c200);flex-wrap:wrap}.top h1{font:700 1.2rem Cinzel,serif;color:var(--m9)}.acts{display:flex;gap:8px;align-items:center}.dirty{font-size:.8rem;color:#b45309;font-weight:600}
+main{padding:24px;max-width:980px}.card{background:#fff;border:1px solid var(--c200);border-radius:16px;padding:20px;margin-bottom:18px}.card h3{color:var(--m9);margin-bottom:4px}.card>p{color:var(--mu);font-size:.85rem;margin-bottom:14px}
+.g{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.f{display:grid;gap:5px}.f>span{font-size:.8rem;font-weight:600;color:var(--m8)}.f small{color:var(--mu);font-size:.75rem}.chk{display:flex;gap:8px;align-items:center;font-weight:500}.chk input{width:auto}
+.stats{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin-bottom:18px}.st{background:linear-gradient(135deg,var(--m9),var(--m8));color:#fff;border-radius:16px;padding:18px}.st b{display:block;font-size:1.7rem;color:var(--g4)}.st span{font-size:.8rem;opacity:.85}
+.imgrow{display:flex;gap:12px;align-items:center}.thumb{flex:none;width:84px;height:64px;border-radius:10px;border:1px solid #d6d3d1;background:var(--c100);display:grid;place-items:center;overflow:hidden;color:var(--mu);font-size:.7rem}.thumb img{width:100%;height:100%;object-fit:contain}.imgrow>div:last-child{flex:1;display:grid;gap:6px}
+table{width:100%;border-collapse:collapse;font-size:.85rem}th{text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mu);padding:8px}td{padding:8px;border-top:1px solid var(--c100);vertical-align:middle}.tw{overflow-x:auto}td .thumb{width:48px;height:40px}.row-a{display:flex;gap:6px}.tools{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap}.tools input{max-width:280px}
+dialog{border:0;border-radius:20px;width:min(640px,95vw);max-height:92vh;padding:0;box-shadow:0 30px 80px #000a}dialog::backdrop{background:#000b}.dh{background:var(--m9);color:var(--g4);padding:14px 20px;font-weight:700;position:sticky;top:0}.db{padding:20px;display:grid;gap:14px}.df{display:flex;justify-content:flex-end;gap:8px;padding:0 20px 20px}
+#toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);padding:12px 22px;border-radius:99px;color:#fff;font-weight:600;opacity:0;pointer-events:none;transition:.3s;z-index:99;max-width:92vw;text-align:center}#toast.show{opacity:1;transform:translate(-50%,0)}#toast.ok{background:#15803d}#toast.no{background:#b91c1c}
+@media(max-width:800px){.shell{grid-template-columns:1fr}aside{position:static;height:auto;flex-direction:row;overflow-x:auto;padding:8px}aside h2{display:none}aside nav{display:flex}aside nav button{white-space:nowrap}main{padding:14px}.top{padding:10px 14px}}
+</style></head><body>
+<div id="loginBox" class="login" hidden><form id="lf" class="lc"><h1>🪔 Owner Login</h1><p>Prabavathi Fragrance · authorised owner only</p>
+<label class="f"><span>Owner email</span><input id="em" type="email" required autocomplete="username"></label>
+<label class="f"><span>Password</span><input id="pw" type="password" required autocomplete="current-password"></label>
+<div class="err" id="le" role="alert"></div><button class="btn">Sign in</button><p><a href="/">← Back to website</a></p></form></div>
+<div id="app" class="shell" hidden>
+<aside><h2>PRABAVATHI OWNER</h2><nav id="nav"></nav></aside>
+<div><div class="top"><h1 id="title">Dashboard</h1><div class="acts"><span class="dirty" id="dirty" hidden>● Unsaved changes</span><a class="b2" href="/" target="_blank" style="text-decoration:none">View site</a><button class="btn" id="save">💾 Save Changes</button><button class="b2" id="out">Logout</button></div></div><main id="view"></main></div></div>
+<dialog id="dlg"></dialog><div id="toast" role="status"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script><script src="pf-data.js"></script><script src="admin.js"></script></body></html>
